@@ -1,0 +1,388 @@
+:root {
+    --dark: #19191B;
+    --grey: #696871;
+    --purple: #5454D4;
+    --orange: #FF7143;
+}
+
+html {
+    scroll-padding: 100px;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+}
+
+.main {
+    margin-top: 120.05px;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    background: white;
+    z-index: 999;
+    top: 0;
+    padding-block: 30px;
+}
+
+[class*="__container"] {
+    max-width: 1069px;
+    margin-inline: auto;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__list {
+    display: flex;
+    gap: 49px;
+}
+
+ul {
+    list-style: none;
+}
+
+.header__list-link {
+    font-weight: 700px;
+    font-size: 15px;
+    letter-spacing: -0.47px;
+    color: var(--grey);
+    transition: 0.3s;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header__list-link.active {
+    color: var(--dark);
+    border-bottom: 2px solid var(--purple);
+    padding: 10px;
+}
+
+.header__list-link:hover {
+    color: var(--dark);
+}
+
+.header__button, .hero__button {
+    font-weight: 700px;
+    font-size: 17px;
+    letter-spacing: -0.53px;
+    color: white;
+    padding: 19px 59px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.header__button {
+    background-color: var(--orange);
+}
+
+
+.header__button:hover {
+    opacity: 90%;
+
+}
+
+
+.hero {
+    padding: 150px;
+}
+
+.hero__container {
+position: relative;
+}
+
+.hero__content {
+    max-width: 423px;
+    padding-block: 92px;
+}
+
+.hero__image {
+    position: absolute;
+    top: 0;
+    right: -75px;
+}
+
+.hero__titl {
+    font-weight: 700;
+    font-size: 80px;
+    letter-spacing: -2.5px;
+    color: var(--dark);
+    line-height: 77px;
+}
+
+.hero__desc {
+font-family: "Mulish", sans-serif;
+font-weight: 400;
+font-size: 20px;
+letter-spacing: -0.63px;
+line-height: 30px;
+color: var(--grey);
+margin-top: 30px;
+}
+
+.hero__buttons {
+    margin-top: 50px;
+    display: flex;
+    gap: 40px;
+}
+
+.hero__button {
+    background-color: var(--purple);
+}
+
+.hero__scroll {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #E7E7E7;
+    border-radius: 1000px
+}
+
+.partners {
+    padding-block: 30px;
+}
+
+.partners__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 19px;    */
+}
+
+.features {
+padding-block: 120px;
+}
+
+.features__container {
+    display: flex;
+    flex-direction: column;
+    gap: 69px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feature__content {
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.feature__title {
+    font-weight: 700px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 50px;
+    line-height: 57px;
+    letter-spacing: -1.56px;
+    color: var(--dark);
+}
+
+.feature__desc {
+    color: var(--grey);
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.63px;
+    font-family: "Mulish", sans-serif;
+}
+
+.feature__link {
+    color: var(--purple);
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 100%;
+    letter-spacing: -0.53px;
+}
+
+.feature__link:hover {
+    text-decoration: underline;
+}
+
+.mini-features {
+    padding-block: 30px;
+}
+
+.mini-features__container {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 74px;
+}
+
+.mini-feature {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.mini-feature__header {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    color: var(--dark);
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: -0.75px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.mini-feature__desc {
+    color: var(--grey);
+    font-family: "Mulish", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+    text-align: center;
+}
+
+.mini-feature__image {
+    height: 97px;
+}
+
+.subscription {
+    padding-block: 118px 158px;
+}
+
+.subscription__container {
+    display: flex;
+    flex-direction: column;
+    gap: 82px;
+
+}
+
+.subscription__header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.subscription__title {
+    font-weight: 700;
+    font-size: 60px;
+    letter-spacing: -1.88px;
+    line-height: 70px;
+}
+
+.subscription__tabs {
+    display: flex;
+    border-inline: 6px solid #F7F7FB;
+    border-block: 5px solid #F7F7FB;
+    border-radius: 10px;
+}
+
+.subscription__tab {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: -0.5px;
+    border: none;
+    background: #F7F7FB;
+    padding: 17px 56px;
+    border-radius: 0 10px 10px 0;
+    color: var(--dark);
+    cursor: pointer;
+}
+
+.subscription__tab.active {
+    background: var(--purple);
+    border-radius: 10px 0 0 10px;
+    color: white;
+}
+
+.subscription__plans {
+    display: grid;
+    grid-template-columns: 330fr 376fr 330fr;
+    gap: 17px;
+}
+
+.subscription__plan {
+    padding: 34px 23px 27px;
+    background: #F8F8F8;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.subscription__plan-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.56px;
+    color: var(--grey);
+}
+
+.subscription__plan-price {
+    color: var(--dark);
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 56px;
+    letter-spacing: -1.03px;
+    margin-top: 22px;
+}
+
+.subscription__plan-price > span {
+    font-size: 28px;
+}
+
+.subscription__plan-features {
+color: var(--grey);
+font-family: "Mulish", sans-serif;
+font-weight: 400;
+font-size: 17px;
+line-height: 50px;
+letter-spacing: -0.53px;
+margin-top: 28px;
+}
+
+.subscription__plan-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: white;
+    padding-block: 19px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: -0.53px;
+    color: var(--purple);
+    margin-top: 36px;
+}
+
+.subscription__plan.active {
+    background: var(--orange);
+}
+
+.subscription__plan.active .subscription__plan-title {
+    color: rgb(255 255 255 / 75%);
+}
+
+.subscription__plan.active .subscription__plan-price, 
+.subscription__plan.active .subscription__plan-features, 
+.subscription__plan.active .subscription__plan-button {
+    color: white;
+}
+
+.subscription__plan.active .subscription__plan-button {
+    background-color: #9F3919;
+}
